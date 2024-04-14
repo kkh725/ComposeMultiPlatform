@@ -28,6 +28,7 @@ fun App() {
             }) {
                 Text(greetingText)
             }
+            Text("정현이 병~신")
             AnimatedVisibility(showImage) {
                 Image(
                     painterResource("compose-multiplatform.xml"),
