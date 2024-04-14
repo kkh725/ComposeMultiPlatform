@@ -15,6 +15,7 @@ import androidx.compose.ui.Modifier
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.painterResource
 
+
 @OptIn(ExperimentalResourceApi::class)
 @Composable
 fun App() {
@@ -23,6 +24,7 @@ fun App() {
         var showImage by remember { mutableStateOf(false) }
         Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
             Button(onClick = {
+                println("App.test")
                 greetingText = "Hello, ${getPlatformName()}"
                 showImage = !showImage
             }) {
